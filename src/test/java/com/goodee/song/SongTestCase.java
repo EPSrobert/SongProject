@@ -1,5 +1,7 @@
 package com.goodee.song;
 
+import static org.junit.Assert.assertEquals;
+
 import java.io.File;
 
 import org.junit.Before;
@@ -16,7 +18,7 @@ public class SongTestCase {
 
 	@Test
 	public void 파일점검테스트() {
-		
+		assertEquals("성공", file, new File("song.mp3"));
 	}
 
 }
